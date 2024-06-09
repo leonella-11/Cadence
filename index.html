@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadence - Computer Shop Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="timer-section">
+            <h1>Cadence</h1>
+            <form id="usageForm">
+                <div class="input-group">
+                    <label for="customerName">Name:</label>
+                    <input type="text" id="customerName" name="customerName" required>
+                </div>
+                <div class="input-group">
+                    <label for="usageTime">Usage Time (in hours):</label>
+                    <input type="number" id="usageTime" name="usageTime" min="1" required>
+                </div>
+                <button type="submit" class="btn">Start Session</button>
+            </form>
+            <div id="timerSection" class="hidden">
+                <h2 id="greeting"></h2>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <p>Hours</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+                <button id="addTime" class="btn">Add Time</button>
+                <button id="endSession" class="btn">End Session</button>
+            </div>
+            <div id="thankYouSection" class="hidden">
+                <h2>Thank you for coming!</h2>
+                <p>We hope to see you again soon!</p>
+            </div>
+        </div>
+        <div class="privacy-policy">
+            <h2>Privacy Policy</h2>
+            <p>Your privacy is important to us. This application uses a pre-designed website template downloaded from Free-CSS.com. The website is hosted via GitHub.com. We do not collect or store any personal information from users.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

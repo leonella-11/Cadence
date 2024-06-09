@@ -1,0 +1,105 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+h1 {
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#usageForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* This makes the labels bold */
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-weight: bold;  /* This makes the input text bold */
+    font-size: 16px;  /* Set the font size here */
+}
+
+.btn {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-item span {
+    display: block;
+    font-size: 2em;
+    color: #28a745;
+}
+
+.countdown-item p {
+    margin: 0;
+}
+
+.privacy-policy {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.privacy-policy p {
+    font-size: 1em;
+    color: #666;
+}
